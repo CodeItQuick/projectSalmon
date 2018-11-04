@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Freelancer - Start Bootstrap Theme</title>
+    <title>Schedule Junkie - We find time so you don't waste yours</title>
 
     <!-- Bootstrap core CSS -->
     <link href= " {{ URL::asset('css/bootstrap.min.css') }} " rel="stylesheet">
@@ -77,7 +77,7 @@
     <header class="masthead bg-white text-primary text-center">
       <div class="container">
         <img class="img-fluid mb-5 d-block mx-auto" src="{{ URL::asset('schedule_junkie.png') }} " alt="">
-        <h1 class="text-uppercase mb-0">Get Started Scheduling</h1>
+        <h1 class="text-uppercase mb-0">We Find Time So You Don't Waste Yours</h1>
         <hr class="star-primary">
         <h2 class="font-weight-light mb-0">Scheduling - Meetings - Planning</h2>
       </div>

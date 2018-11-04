@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('Schedule.html', 'ScheduleController@create');
+Route::get('/Schedule.html', 'ScheduleController@create');
 
 Auth::routes();
 
