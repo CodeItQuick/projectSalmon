@@ -1,154 +1,197 @@
+@extends('layouts.app')
+@section('content')
+<div class="cd-schedule loading">
+	<div class="timeline">
+		<ul>
+			<li><span>09:00</span></li>
+			<li><span>09:30</span></li>
+			<li><span>10:00</span></li>
+			<li><span>10:30</span></li>
+			<li><span>11:00</span></li>
+			<li><span>11:30</span></li>
+			<li><span>12:00</span></li>
+			<li><span>12:30</span></li>
+			<li><span>13:00</span></li>
+			<li><span>13:30</span></li>
+			<li><span>14:00</span></li>
+			<li><span>14:30</span></li>
+			<li><span>15:00</span></li>
+			<li><span>15:30</span></li>
+			<li><span>16:00</span></li>
+			<li><span>16:30</span></li>
+			<li><span>17:00</span></li>
+			<li><span>17:30</span></li>
+			<li><span>18:00</span></li>
+		</ul>
+	</div> <!-- .timeline -->
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset='utf-8' />
-<link href='https://fullcalendar.io/releases/fullcalendar/3.9.0/fullcalendar.min.css' rel='stylesheet' />
-<link href='https://fullcalendar.io/releases/fullcalendar/3.9.0/fullcalendar.print.min.css' rel='stylesheet' media='print' />
-<script src='https://fullcalendar.io/releases/fullcalendar/3.9.0/lib/moment.min.js'></script>
-<script src='https://fullcalendar.io/releases/fullcalendar/3.9.0/lib/jquery.min.js'></script>
-<script src='https://fullcalendar.io/releases/fullcalendar/3.9.0/fullcalendar.min.js'></script>
+	<div class="events">
+		<ul>
+			<li class="events-group">
+				<div class="top-info"><span>Monday</span></div>
 
-  <script>
+				<ul>
+					<li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
+						<a href="#0">
+							<em class="event-name">Abs Circuit</em>
+						</a>
+					</li>
 
-  $(function() {
+					<li class="single-event" data-start="11:00" data-end="12:30" data-content="event-rowing-workout" data-event="event-2">
+						<a href="#0">
+							<em class="event-name">Rowing Workout</em>
+						</a>
+					</li>
 
-    $('#calendar').fullCalendar({
-      defaultView: 'month',
+					<li class="single-event" data-start="14:00" data-end="15:15"  data-content="event-yoga-1" data-event="event-3">
+						<a href="#0">
+							<em class="event-name">Yoga Level 1</em>
+						</a>
+					</li>
+				</ul>
+			</li>
 
-      header: {
-        center: 'addEventButton'
-      },
+			<li class="events-group">
+				<div class="top-info"><span>Tuesday</span></div>
 
-      customButtons: {
-        addEventButton: {
-          text: 'add event...',
-          click: function() {
-            var dateStr = prompt('Enter a date in YYYY-MM-DD format');
-            var date = moment(dateStr);
+				<ul>
+					<li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-2">
+						<a href="#0">
+							<em class="event-name">Rowing Workout</em>
+						</a>
+					</li>
 
-            if (date.isValid()) {
-              $('#calendar').fullCalendar('renderEvent', {
-                title: 'dynamic event',
-                start: date,
-                allDay: true
-              });
-              alert('Great. Now, update your database...');
-            } else {
-              alert('Invalid date.');
-            }
-          }
-        }
-      }
-    });
+					<li class="single-event" data-start="11:30" data-end="13:00"  data-content="event-restorative-yoga" data-event="event-4">
+						<a href="#0">
+							<em class="event-name">Restorative Yoga</em>
+						</a>
+					</li>
 
-  });
+					<li class="single-event" data-start="13:30" data-end="15:00" data-content="event-abs-circuit" data-event="event-1">
+						<a href="#0">
+							<em class="event-name">Abs Circuit</em>
+						</a>
+					</li>
 
-</script>
+					<li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-3">
+						<a href="#0">
+							<em class="event-name">Yoga Level 1</em>
+						</a>
+					</li>
+				</ul>
+			</li>
 
+			<li class="events-group">
+				<div class="top-info"><span>Wednesday</span></div>
 
+				<ul>
+					<li class="single-event" data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-4">
+						<a href="#0">
+							<em class="event-name">Restorative Yoga</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="10:45" data-end="11:45" data-content="event-yoga-1" data-event="event-3">
+						<a href="#0">
+							<em class="event-name">Yoga Level 1</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="12:00" data-end="13:45"  data-content="event-rowing-workout" data-event="event-2">
+						<a href="#0">
+							<em class="event-name">Rowing Workout</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="13:45" data-end="15:00" data-content="event-yoga-1" data-event="event-3">
+						<a href="#0">
+							<em class="event-name">Yoga Level 1</em>
+						</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="events-group">
+				<div class="top-info"><span>Thursday</span></div>
+
+				<ul>
+					<li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
+						<a href="#0">
+							<em class="event-name">Abs Circuit</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="12:00" data-end="13:45" data-content="event-restorative-yoga" data-event="event-4">
+						<a href="#0">
+							<em class="event-name">Restorative Yoga</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="15:30" data-end="16:30" data-content="event-abs-circuit" data-event="event-1">
+						<a href="#0">
+							<em class="event-name">Abs Circuit</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="17:00" data-end="18:30"  data-content="event-rowing-workout" data-event="event-2">
+						<a href="#0">
+							<em class="event-name">Rowing Workout</em>
+						</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="events-group">
+				<div class="top-info"><span>Friday</span></div>
+
+				<ul>
+					<li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-2">
+						<a href="#0">
+							<em class="event-name">Rowing Workout</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="12:30" data-end="14:00" data-content="event-abs-circuit" data-event="event-1">
+						<a href="#0">
+							<em class="event-name">Abs Circuit</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-3">
+						<a href="#0">
+							<em class="event-name">Yoga Level 1</em>
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div class="event-modal">
+		<header class="header">
+			<div class="content">
+				<span class="event-date"></span>
+				<h3 class="event-name"></h3>
+			</div>
+
+			<div class="header-bg"></div>
+		</header>
+
+		<div class="body">
+			<div class="event-info"></div>
+			<div class="body-bg"></div>
+		</div>
+
+		<a href="#0" class="close">Close</a>
+	</div>
+
+	<div class="cover-layer"></div>
+</div> <!-- .cd-schedule -->
+<script src="js/modernizr.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 <script>
-
-  $(document).ready(function() {
-
-    $('#calendar').fullCalendar({
-      header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'month,basicWeek,basicDay'
-      },
-      defaultDate: '2018-03-12',
-      navLinks: true, // can click day/week names to navigate views
-      editable: true,
-      eventLimit: true, // allow "more" link when too many events
-      events: [
-        {
-          title: 'All Day Event',
-          start: '2018-03-01'
-        },
-        {
-          title: 'Long Event',
-          start: '2018-03-07',
-          end: '2018-03-10'
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: '2018-03-09T16:00:00'
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: '2018-03-16T16:00:00'
-        },
-        {
-          title: 'Conference',
-          start: '2018-03-11',
-          end: '2018-03-13'
-        },
-        {
-          title: 'Meeting',
-          start: '2018-03-12T10:30:00',
-          end: '2018-03-12T12:30:00'
-        },
-        {
-          title: 'Lunch',
-          start: '2018-03-12T12:00:00'
-        },
-        {
-          title: 'Meeting',
-          start: '2018-03-12T14:30:00'
-        },
-        {
-          title: 'Happy Hour',
-          start: '2018-03-12T17:30:00'
-        },
-        {
-          title: 'Dinner',
-          start: '2018-03-12T20:00:00'
-        },
-        {
-          title: 'Birthday Party',
-          start: '2018-03-13T07:00:00'
-        },
-        {
-          title: 'Click for Google',
-          url: 'http://google.com/',
-          start: '2018-03-28'
-        }
-      ]
-    });
-
-  });
-
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
 </script>
-<style>
-
-  body {
-    margin: 40px 10px;
-    padding: 0;
-    font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-    font-size: 14px;
-  }
-
-  #calendar {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-</style>
-
-
-  <script>
-
-
-
-</script>
-
-</head>
-<body>
-
-  <div id='calendar'></div>
-
+<script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
 </html>

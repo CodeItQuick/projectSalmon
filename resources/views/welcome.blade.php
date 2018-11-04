@@ -74,11 +74,11 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead bg-primary text-white text-center">
+    <header class="masthead bg-white text-primary text-center">
       <div class="container">
         <img class="img-fluid mb-5 d-block mx-auto" src="{{ URL::asset('schedule_junkie.png') }} " alt="">
         <h1 class="text-uppercase mb-0">Get Started Scheduling</h1>
-        <hr class="star-light">
+        <hr class="star-primary">
         <h2 class="font-weight-light mb-0">Scheduling - Meetings - Planning</h2>
       </div>
     </header>
