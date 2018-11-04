@@ -34,7 +34,7 @@ class ScheduleController extends Controller
         // Request authorization from the user.
         //$authUrl = $client->createAuthUrl();
 
-        $client = new \Google_Client();
+        /*$client = new \Google_Client();
         $client->setAuthConfig('C:\client_id.json');
         $client->setAccessType("online");        // offline access
         $client->setIncludeGrantedScopes(true);   // incremental auth
@@ -58,8 +58,8 @@ class ScheduleController extends Controller
         $results = $service->events->listEvents($calendarId, $optParams);
         $events = $results->getItems();
         dd($events);
-
-        return view('layouts.app');
+*/
+        return view('auth.calendar.index');
 
         // $clientInstance = getClient();
 
