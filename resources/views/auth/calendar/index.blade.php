@@ -1,5 +1,7 @@
 @extends('layouts.app')
 @section('content')
+<div class="container">
+<h2 class="text-center  text-uppercase text-secondary mb-0">Schedule</h2>
 <div class="cd-schedule loading">
 	<div class="timeline">
 		<ul>
@@ -27,25 +29,25 @@
 
 	<div class="events">
 		<ul>
-			<li class="events-group">
+			<li class="events-group body-bg-red">
 				<div class="top-info"><span>Monday</span></div>
 
 				<ul>
 					<li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Abs Circuit</em>
+							<em class="event-name">Busy</em>
 						</a>
 					</li>
 
-					<li class="single-event" data-start="11:00" data-end="12:30" data-content="event-rowing-workout" data-event="event-2">
+					<li class="single-event" data-start="11:00" data-end="12:30" data-content="event-rowing-workout" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Rowing Workout</em>
+							<em class="event-name">Busy</em>
 						</a>
 					</li>
 
-					<li class="single-event" data-start="14:00" data-end="15:15"  data-content="event-yoga-1" data-event="event-3">
+					<li class="single-event" data-start="14:00" data-end="15:15"  data-content="event-yoga-1" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Yoga Level 1</em>
+							<em class="event-name">Busy</em>
 						</a>
 					</li>
 				</ul>
@@ -55,27 +57,27 @@
 				<div class="top-info"><span>Tuesday</span></div>
 
 				<ul>
-					<li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-2">
+					<li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Rowing Workout</em>
+							<em class="event-name">Busy</em>
 						</a>
 					</li>
 
-					<li class="single-event" data-start="11:30" data-end="13:00"  data-content="event-restorative-yoga" data-event="event-4">
+					<li class="single-event" data-start="11:30" data-end="13:00"  data-content="event-restorative-yoga" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Restorative Yoga</em>
+							<em class="event-name">Busy</em>
 						</a>
 					</li>
 
 					<li class="single-event" data-start="13:30" data-end="15:00" data-content="event-abs-circuit" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Abs Circuit</em>
+							<em class="event-name">Busy</em>
 						</a>
 					</li>
 
-					<li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-3">
+					<li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Yoga Level 1</em>
+							<em class="event-name">Busy</em>
 						</a>
 					</li>
 				</ul>
@@ -85,27 +87,27 @@
 				<div class="top-info"><span>Wednesday</span></div>
 
 				<ul>
-					<li class="single-event" data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-4">
+					<li class="single-event" data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Restorative Yoga</em>
+							<em class="event-name">Busy</em>
 						</a>
 					</li>
 
-					<li class="single-event" data-start="10:45" data-end="11:45" data-content="event-yoga-1" data-event="event-3">
+					<li class="single-event" data-start="10:45" data-end="11:45" data-content="event-yoga-1" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Yoga Level 1</em>
+							<em class="event-name">Busy</em>
 						</a>
 					</li>
 
-					<li class="single-event" data-start="12:00" data-end="13:45"  data-content="event-rowing-workout" data-event="event-2">
+					<li class="single-event" data-start="12:00" data-end="13:45"  data-content="event-rowing-workout" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Rowing Workout</em>
+							<em class="event-name">Busy</em>
 						</a>
 					</li>
 
-					<li class="single-event" data-start="13:45" data-end="15:00" data-content="event-yoga-1" data-event="event-3">
+					<li class="single-event" data-start="13:45" data-end="15:00" data-content="event-yoga-1" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Yoga Level 1</em>
+							<em class="event-name">Busy</em>
 						</a>
 					</li>
 				</ul>
@@ -117,25 +119,25 @@
 				<ul>
 					<li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Abs Circuit</em>
+							<em class="event-name">Busy</em>
 						</a>
 					</li>
 
-					<li class="single-event" data-start="12:00" data-end="13:45" data-content="event-restorative-yoga" data-event="event-4">
+					<li class="single-event" data-start="12:00" data-end="13:45" data-content="event-restorative-yoga" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Restorative Yoga</em>
+							<em class="event-name">Busy</em>
 						</a>
 					</li>
 
 					<li class="single-event" data-start="15:30" data-end="16:30" data-content="event-abs-circuit" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Abs Circuit</em>
+							<em class="event-name">Busy</em>
 						</a>
 					</li>
 
-					<li class="single-event" data-start="17:00" data-end="18:30"  data-content="event-rowing-workout" data-event="event-2">
+					<li class="single-event" data-start="17:00" data-end="18:30"  data-content="event-rowing-workout" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Rowing Workout</em>
+							<em class="event-name">Busy</em>
 						</a>
 					</li>
 				</ul>
@@ -145,21 +147,21 @@
 				<div class="top-info"><span>Friday</span></div>
 
 				<ul>
-					<li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-2">
+					<li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Rowing Workout</em>
+							<em class="event-name">Busy</em>
 						</a>
 					</li>
 
 					<li class="single-event" data-start="12:30" data-end="14:00" data-content="event-abs-circuit" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Abs Circuit</em>
+							<em class="event-name">Busy</em>
 						</a>
 					</li>
 
-					<li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-3">
+					<li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Yoga Level 1</em>
+							<em class="event-name">Busy</em>
 						</a>
 					</li>
 				</ul>
@@ -193,5 +195,5 @@
 	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
 </script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
-</body>
-</html>
+</div>
+@endsection
