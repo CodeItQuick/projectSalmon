@@ -26,9 +26,9 @@ class ScheduleController extends Controller
     public function create()
     {
 
-        session_start();
+        //session_start();
 
-        require_once ('C:/Users/Owner/projectSalmon/vendor/autoload.php');
+        //require_once ('../vendor/autoload.php');
         //getAuthUrl
 
         // Request authorization from the user.

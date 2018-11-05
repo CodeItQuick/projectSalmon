@@ -35,19 +35,19 @@
 				<ul>
 					<li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Busy</em>
+							<em class="event-name">John Busy</em>
 						</a>
 					</li>
 
 					<li class="single-event" data-start="11:00" data-end="12:30" data-content="event-rowing-workout" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Busy</em>
+							<em class="event-name">Bijon Busy</em>
 						</a>
 					</li>
 
 					<li class="single-event" data-start="14:00" data-end="15:15"  data-content="event-yoga-1" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Busy</em>
+							<em class="event-name">Bijon Busy</em>
 						</a>
 					</li>
 				</ul>
@@ -59,25 +59,25 @@
 				<ul>
 					<li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Busy</em>
+							<em class="event-name">Oliver Busy</em>
 						</a>
 					</li>
 
 					<li class="single-event" data-start="11:30" data-end="13:00"  data-content="event-restorative-yoga" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Busy</em>
+							<em class="event-name">Bijon Busy</em>
 						</a>
 					</li>
 
 					<li class="single-event" data-start="13:30" data-end="15:00" data-content="event-abs-circuit" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Busy</em>
+							<em class="event-name">Bijon Busy</em>
 						</a>
 					</li>
 
 					<li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Busy</em>
+							<em class="event-name">Oliver Busy</em>
 						</a>
 					</li>
 				</ul>
@@ -89,25 +89,25 @@
 				<ul>
 					<li class="single-event" data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Busy</em>
+							<em class="event-name">John Busy</em>
 						</a>
 					</li>
 
 					<li class="single-event" data-start="10:45" data-end="11:45" data-content="event-yoga-1" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Busy</em>
+							<em class="event-name">Evan Busy<br>John Busy</em>
 						</a>
 					</li>
 
 					<li class="single-event" data-start="12:00" data-end="13:45"  data-content="event-rowing-workout" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Busy</em>
+							<em class="event-name">Evan Busy<br>John Busy</em>
 						</a>
 					</li>
 
 					<li class="single-event" data-start="13:45" data-end="15:00" data-content="event-yoga-1" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Busy</em>
+							<em class="event-name">Bijon Busy</em>
 						</a>
 					</li>
 				</ul>
@@ -119,25 +119,25 @@
 				<ul>
 					<li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Busy</em>
+							<em class="event-name">Bijon Busy<br>John Busy<br>Oliver Busy</em>
 						</a>
 					</li>
 
 					<li class="single-event" data-start="12:00" data-end="13:45" data-content="event-restorative-yoga" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Busy</em>
+							<em class="event-name">Evan Busy</em>
 						</a>
 					</li>
 
 					<li class="single-event" data-start="15:30" data-end="16:30" data-content="event-abs-circuit" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Busy</em>
+							<em class="event-name">Bijon Busy</em>
 						</a>
 					</li>
 
 					<li class="single-event" data-start="17:00" data-end="18:30"  data-content="event-rowing-workout" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Busy</em>
+							<em class="event-name">Evan Busy</em>
 						</a>
 					</li>
 				</ul>
@@ -149,19 +149,19 @@
 				<ul>
 					<li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Busy</em>
+							<em class="event-name">Bijon Busy</em>
 						</a>
 					</li>
 
 					<li class="single-event" data-start="12:30" data-end="14:00" data-content="event-abs-circuit" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Busy</em>
+							<em class="event-name">Evan Busy</em>
 						</a>
 					</li>
 
 					<li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-1">
 						<a href="#0">
-							<em class="event-name">Busy</em>
+							<em class="event-name">Bijon Busy</em>
 						</a>
 					</li>
 				</ul>
