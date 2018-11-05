@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 //require __DIR__ . '/vendor/autoload.php';
 
 use Illuminate\Http\Request;
+use Spatie\GoogleCalendar\Event;
 
 class ScheduleController extends Controller
 {
@@ -26,40 +27,11 @@ class ScheduleController extends Controller
     public function create()
     {
 
-        //session_start();
+        $events = Event::get();
 
-        //require_once ('../vendor/autoload.php');
-        //getAuthUrl
 
-        // Request authorization from the user.
-        //$authUrl = $client->createAuthUrl();
 
-        /*$client = new \Google_Client();
-        $client->setAuthConfig('C:\client_id.json');
-        $client->setAccessType("online");        // offline access
-        $client->setIncludeGrantedScopes(true);   // incremental auth
-        //$client->addScope(Google_Service_Drive::DRIVE_METADATA_READONLY);
-        $client->setRedirectUri('http://' . $_SERVER['HTTP_HOST'] . '/oauth2callback.php');
-        //$client->addScope("email");
-        //$client->addScope("profile");
-        $client->addScope(\Google_Service_Calendar::CALENDAR);
-        $client->addScope(\Google_Service_Calendar::CALENDAR_READONLY);
-        $client->setAccessType('offline'); 
-
-        $service = new \Google_Service_Oauth2($client);
-        // Print the next 10 events on the user's calendar.
-        $calendarId = 'primary';
-        $optParams = array(
-            'maxResults' => 10,
-            'orderBy' => 'startTime',
-            'singleEvents' => true,
-            'timeMin' => date('c'),
-        );
-        $results = $service->events->listEvents($calendarId, $optParams);
-        $events = $results->getItems();
-        dd($events);
-*/
-        return view('auth.calendar.index');
+        return view('auth.calendar.index', compact('events'));
 
         // $clientInstance = getClient();
 

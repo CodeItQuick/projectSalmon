@@ -33,23 +33,16 @@
 				<div class="top-info"><span>Monday</span></div>
 
 				<ul>
-					<li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
-						<a href="#0">
-							<em class="event-name">John Busy</em>
-						</a>
-					</li>
 
-					<li class="single-event" data-start="11:00" data-end="12:30" data-content="event-rowing-workout" data-event="event-1">
-						<a href="#0">
-							<em class="event-name">Bijon Busy</em>
-						</a>
-					</li>
-
-					<li class="single-event" data-start="14:00" data-end="15:15"  data-content="event-yoga-1" data-event="event-1">
-						<a href="#0">
-							<em class="event-name">Bijon Busy</em>
-						</a>
-					</li>
+					@foreach($events as $event)
+					@if($event->startDateTime->format('l') == "Monday")
+						<li class="single-event" data-start= "{{ $event->startDateTime->format('H:i') }} " data-end="{{ $event->endDateTime->format('H:i') }}" data-content="event-abs-circuit" data-event="event-1">
+							<a href="#0">
+								<em class="event-name">Evan Google Calendar Busy </em>
+							</a>
+						</li>
+					@endif
+					@endforeach
 				</ul>
 			</li>
 
@@ -57,29 +50,17 @@
 				<div class="top-info"><span>Tuesday</span></div>
 
 				<ul>
-					<li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-1">
-						<a href="#0">
-							<em class="event-name">Oliver Busy</em>
-						</a>
-					</li>
-
-					<li class="single-event" data-start="11:30" data-end="13:00"  data-content="event-restorative-yoga" data-event="event-1">
-						<a href="#0">
-							<em class="event-name">Bijon Busy</em>
-						</a>
-					</li>
-
-					<li class="single-event" data-start="13:30" data-end="15:00" data-content="event-abs-circuit" data-event="event-1">
-						<a href="#0">
-							<em class="event-name">Bijon Busy</em>
-						</a>
-					</li>
-
-					<li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-1">
-						<a href="#0">
-							<em class="event-name">Oliver Busy</em>
-						</a>
-					</li>
+				
+					@foreach($events as $event)
+					@if($event->startDateTime->format('l') == "Tuesday")
+						<li class="single-event" data-start= "{{ $event->startDateTime->format('H:i') }} " data-end="{{ $event->endDateTime->format('H:i') }}" data-content="event-abs-circuit" data-event="event-1">
+							<a href="#0">
+								<em class="event-name">Evan Google Calendar Busy </em>
+							</a>
+						</li>
+					@endif
+					@endforeach
+				
 				</ul>
 			</li>
 
@@ -87,29 +68,15 @@
 				<div class="top-info"><span>Wednesday</span></div>
 
 				<ul>
-					<li class="single-event" data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-1">
-						<a href="#0">
-							<em class="event-name">John Busy</em>
-						</a>
-					</li>
-
-					<li class="single-event" data-start="10:45" data-end="11:45" data-content="event-yoga-1" data-event="event-1">
-						<a href="#0">
-							<em class="event-name">Evan Busy<br>John Busy</em>
-						</a>
-					</li>
-
-					<li class="single-event" data-start="12:00" data-end="13:45"  data-content="event-rowing-workout" data-event="event-1">
-						<a href="#0">
-							<em class="event-name">Evan Busy<br>John Busy</em>
-						</a>
-					</li>
-
-					<li class="single-event" data-start="13:45" data-end="15:00" data-content="event-yoga-1" data-event="event-1">
-						<a href="#0">
-							<em class="event-name">Bijon Busy</em>
-						</a>
-					</li>
+					@foreach($events as $event)
+					@if($event->startDateTime->format('l') == "Wednesday")
+						<li class="single-event" data-start= "{{ $event->startDateTime->format('H:i') }} " data-end="{{ $event->endDateTime->format('H:i') }}" data-content="event-abs-circuit" data-event="event-1">
+							<a href="#0">
+								<em class="event-name">Evan Google Calendar Busy </em>
+							</a>
+						</li>
+					@endif
+					@endforeach
 				</ul>
 			</li>
 
@@ -117,29 +84,15 @@
 				<div class="top-info"><span>Thursday</span></div>
 
 				<ul>
-					<li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
-						<a href="#0">
-							<em class="event-name">Bijon Busy<br>John Busy<br>Oliver Busy</em>
-						</a>
-					</li>
-
-					<li class="single-event" data-start="12:00" data-end="13:45" data-content="event-restorative-yoga" data-event="event-1">
-						<a href="#0">
-							<em class="event-name">Evan Busy</em>
-						</a>
-					</li>
-
-					<li class="single-event" data-start="15:30" data-end="16:30" data-content="event-abs-circuit" data-event="event-1">
-						<a href="#0">
-							<em class="event-name">Bijon Busy</em>
-						</a>
-					</li>
-
-					<li class="single-event" data-start="17:00" data-end="18:30"  data-content="event-rowing-workout" data-event="event-1">
-						<a href="#0">
-							<em class="event-name">Evan Busy</em>
-						</a>
-					</li>
+					@foreach($events as $event)
+					@if($event->startDateTime->format('l') == "Thursday")
+						<li class="single-event" data-start= "{{ $event->startDateTime->format('H:i') }} " data-end="{{ $event->endDateTime->format('H:i') }}" data-content="event-abs-circuit" data-event="event-1">
+							<a href="#0">
+								<em class="event-name">Evan Google Calendar Busy </em>
+							</a>
+						</li>
+					@endif
+					@endforeach
 				</ul>
 			</li>
 
@@ -147,23 +100,16 @@
 				<div class="top-info"><span>Friday</span></div>
 
 				<ul>
-					<li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-1">
-						<a href="#0">
-							<em class="event-name">Bijon Busy</em>
-						</a>
-					</li>
 
-					<li class="single-event" data-start="12:30" data-end="14:00" data-content="event-abs-circuit" data-event="event-1">
-						<a href="#0">
-							<em class="event-name">Evan Busy</em>
-						</a>
-					</li>
-
-					<li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-1">
-						<a href="#0">
-							<em class="event-name">Bijon Busy</em>
-						</a>
-					</li>
+					@foreach($events as $event)
+					@if($event->startDateTime->format('l') == "Friday")
+						<li class="single-event" data-start= "{{ $event->startDateTime->format('H:i') }} " data-end="{{ $event->endDateTime->format('H:i') }}" data-content="event-abs-circuit" data-event="event-1">
+							<a href="#0">
+								<em class="event-name">Evan Google Calendar Busy </em>
+							</a>
+						</li>
+					@endif
+					@endforeach
 				</ul>
 			</li>
 		</ul>
